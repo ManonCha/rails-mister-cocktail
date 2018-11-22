@@ -1,11 +1,17 @@
-<div class="title">
-  <h1>All cocktails</h1>
+<div class="banner">
+  <div class="banner-content">
+    <h1>Mister Cocktail</h1>
+    <%= link_to("Add a cocktail", new_cocktail_path, class: 'btn btn-primary btn-lg') %>
+  </div>
 </div>
-
-<% @cocktails.each do |cocktail| %>
-<div class="cocktail-card">
-  <img src="https://picsum.photos/300">
-  <strong><%= cocktail.name %></strong>
-  <%= link_to "See details", cocktail_path(cocktail.id), class: "btn btn-primary" %>
-<% end %>
+<div class="row">
+  <% @cocktails.each do |cocktail| %>
+  <div class="col-xs-12 col-sm-4">
+    <div class="card">
+      <img src="https://picsum.photos/300">
+      <div class="card-name"><%= cocktail.name %></div>
+      <div class="btn btn-primary"><%= link_to "See details", cocktail_path(cocktail.id) %></div>
+    </div>
+  </div>
+  <% end %>
 </div>
