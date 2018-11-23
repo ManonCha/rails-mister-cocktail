@@ -1,7 +1,9 @@
 .banner {
   color: white;
   text-align: center;
+  padding: 0px;
   height: 100vh;
+  width: 100vw;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-image: url('cocktails.jpg');
