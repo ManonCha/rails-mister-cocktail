@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <%= render 'layouts/navbar.html.erb' %>
     <div class="container">
+      <%= render 'layouts/navbar.html.erb' %>
       <%= yield %>
     </div>
     <%= javascript_include_tag "application" %>
