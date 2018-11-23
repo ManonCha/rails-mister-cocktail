@@ -22,6 +22,3 @@ ingredients['drinks'].each do |ing|
   Ingredient.create(name: ing['strIngredient1'])
 end
 puts 'done !'
-
-Cocktail.create(name: 'Mojito')
-Cocktail.create(name: 'Mai Tai')

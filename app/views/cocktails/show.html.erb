@@ -1,4 +1,5 @@
 <h1 class="cocktail_title"><%= @cocktail.name %></h1>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
 <div class="cocktail-details">
   <h4>Composition :</h4>

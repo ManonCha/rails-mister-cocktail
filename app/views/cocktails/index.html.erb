@@ -8,7 +8,7 @@
   <% @cocktails.each do |cocktail| %>
   <div class="col-xs-12 col-sm-4">
     <div class="card">
-      <img src="https://picsum.photos/300">
+      <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %>
       <div class="card-name"><%= cocktail.name %></div>
       <div class="btn btn-primary"><%= link_to "See details", cocktail_path(cocktail.id) %></div>
     </div>
