@@ -39,3 +39,10 @@
 .pad {
   padding-left: 10px;
 }
+
+.link-hover {
+  &:hover {
+    opacity: 0.8;
+    background: white;
+  }
+}

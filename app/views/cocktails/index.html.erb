@@ -8,7 +8,7 @@
 
 <div class="row">
   <% @cocktails.each do |cocktail| %>
-    <%= link_to cocktail_path(cocktail) do  %>
+    <%= link_to cocktail_path(cocktail), class: "link-hover" do  %>
       <div class="col-xs-12 col-sm-4 card", style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, height: 300, width: 300, crop: :fill %>')">
             <div class="card-name"><%= cocktail.name %></div>
       </div>
