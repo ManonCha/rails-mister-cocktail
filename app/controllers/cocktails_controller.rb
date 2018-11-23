@@ -1,5 +1,6 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show, :edit]
+  mount_uploader :photo, PhotoUploader
 
   def index
     @cocktails = Cocktail.all
