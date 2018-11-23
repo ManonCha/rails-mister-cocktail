@@ -10,9 +10,10 @@
 .card-name {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  // left: 10px;
   font-size: 1.5em;
   z-index: 10;
+  padding: 20px;
 }
 
 .card-link {
@@ -27,4 +28,14 @@
 }
 .card:hover .card-link {
   opacity: 0;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+
+.pad {
+  padding-left: 10px;
 }

@@ -1,14 +1,14 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
+  <%#= link_to root_path, class: "navbar-wagon-brand" do %>
     <%#= image_tag "logo.png", height: 50 %>
-  <% end %>
+  <%# end %>
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
     <!-- Links -->
-    <%= link_to "New cocktail", new_cocktail_path%>
-    <%= link_to "All cocktails", cocktails_path%>
+    <%= link_to "New cocktail", new_cocktail_path, class: "pad" %>
+    <%= link_to "All cocktails", cocktails_path, class: "pad" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
@@ -16,9 +16,8 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><%= link_to "New cocktail", new_cocktail_path%>
+        <li><%= link_to "All cocktails", cocktails_path%>
       </ul>
     </div>
   </div>
