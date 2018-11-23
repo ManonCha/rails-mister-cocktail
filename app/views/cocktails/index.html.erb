@@ -4,20 +4,15 @@
 <!--     <%#= link_to("Add a cocktail", new_cocktail_path, class: 'btn btn-primary btn-lg') %> -->
   </div>
 </div>
-<div>
-  <h1 class="text-center">Magic cocktails</h1>
-</div>
+<h1 class="text-center mb-40px">Magic cocktails</h1>
 <div class="row">
   <% @cocktails.each do |cocktail| %>
     <div class="col-xs-12 col-sm-4", style="padding: 0">
-      <%= link_to cocktail_path(cocktail) do %>
-        <div class="card"
-          style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-                 url('<%= cl_image_path cocktail.photo, height: 300, width: 300, crop: :fill %>')">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path cocktail.photo, height: 300, width: 300, crop: :fill %>')">
           <div class="card-name"><%= cocktail.name %></div>
+          <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
         </div>
-      </div>
-    <% end %>
+    </div>
   <% end %>
 </div>
 
